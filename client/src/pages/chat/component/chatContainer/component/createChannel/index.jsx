@@ -21,7 +21,11 @@ import Select from "react-select";
 
 const CreateChannel = () => {
 
-    const {selectedChatType, setSelectedChatType, addChannel} = useAppStore();
+
+    const { setSelectedChatType, setSelectedChatData} = useAppStore();
+
+
+    const { addChannel} = useAppStore();
     const [newChannelModel, setNewChannelModel] = useState(false);
     const [allContacts, setAllContacts] = useState([]);
     const [selectedContacts, setSelectedContacts] = useState([]);

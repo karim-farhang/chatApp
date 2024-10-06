@@ -63,6 +63,7 @@ const Auth = () => {
                     else navigate("/profile");
 
                 }
+            // eslint-disable-next-line no-unused-vars
             } catch (error) {
                 toast.error("Login failed. Please try again.");
             } finally {
@@ -102,7 +103,7 @@ const Auth = () => {
                 className="h-[80vh] bg-white border-2 shadow-2xl w-[80vw] md:w-[90vw] lg:w-[70vw] xl:w-[60vw] rounded-3xl grid xl:grid-cols-2">
 
                 {/* Left Side - Logo Section */}
-                <div className="flex items-center justify-center bg-purple-500 rounded-l-3xl p-10">
+                <div className="flex items-center justify-center bg-white rounded-l-3xl p-10">
                     <img
                         src={logo_white}
                         alt="background logo"
@@ -111,10 +112,10 @@ const Auth = () => {
                 </div>
 
                 {/* Right Side - Form Section */}
-                <div className="flex flex-col gap-10 items-center justify-center p-10">
+                <div className="flex flex-col gap-10 items-center justify-center p-5">
                     <div className="flex items-center justify-center flex-col">
                         <div className="flex items-center justify-center mb-4">
-                            <h1 className="text-5xl font-bold md:text-6xl">Welcome</h1>
+                            <h5 className="text-xl font-bold md:text-1xl">Welcome to local chat application</h5>
                         </div>
 
                         <div className="flex items-center justify-center w-full">
